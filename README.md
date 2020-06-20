@@ -1,9 +1,7 @@
-# Selenium Cucumber Framework
-**_An automation framework built for front-end/UI testing._****
 
+## This repository uses Selenium Cucumber Framework
 
-
-### Technologies
+Technologies Used:
 - Java
 - Maven
 - Selenium
@@ -11,4 +9,3 @@
 - JUnit
 
 
-** *The site [PHP Travels](https://www.phptravels.net/) is a free web application chosen to cater this test automation initiative.*
