@@ -1,5 +1,5 @@
 Selenium Cucumber Framework
-**An automation framework for Web app testing._****
+**An automation framework for Web app testing**
 
 
 
@@ -8,5 +8,5 @@ Technologies:
 - Maven
 - Selenium
 - Cucumber
-- Junta
+- Junit
 
