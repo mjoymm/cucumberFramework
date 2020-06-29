@@ -4,9 +4,7 @@ public class Passwords {
 	private NonMatching nonMatching;
 	private LessThanSix lessThanSix;
 	
-	public NonMatching getNonMatching() {
-		return nonMatching;
-	}
+	public NonMatching getNonMatching() { return nonMatching;}
 	public void setNonMatching(NonMatching nonMatching) {
 		this.nonMatching = nonMatching;
 	}

@@ -9,6 +9,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.constants.DriverType;
 import com.constants.EnvironmentType;
+import org.openqa.selenium.interactions.Actions;
 
 public class WebDriverManager {
 	private WebDriver driver;
@@ -54,12 +55,13 @@ public class WebDriverManager {
 		}
 		return driver;
 	}
-	
+
 	public WebDriver getDriver() {
 		driver = (driver == null) ? createDriver() : driver;
 		return driver;
 	}
-	
+
+
 	public void quitDriver() {
 		driver.close();
 		driver.quit();

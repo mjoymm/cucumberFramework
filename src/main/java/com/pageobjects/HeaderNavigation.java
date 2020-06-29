@@ -11,14 +11,14 @@ public class HeaderNavigation {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(how = How.CSS, using = "ul>ul>#li_dropdownCurrency")
+	@FindBy(how = How.CSS, using = "div.dropdown-login #dropdownCurrency")
 	private WebElement drpdownMyAccount;
 
 
-	@FindBy(how = How.CSS, using = "ul>ul>#li_myaccount li:nth-child(2)")
+	@FindBy(how = How.CSS, using = "div.dropdown-login .dropdown-item:last-child")
 	private WebElement optnSignUp;
 	
-	@FindBy(how = How.CSS, using = "ul>ul>#li_myaccount li:nth-child(1)")
+	@FindBy(how = How.CSS, using = "div.dropdown-login .dropdown-item:nth-child(1)")
 	private WebElement optnLogin;
 	
 	@FindBy(how = How.CSS, using = "[data-title=flights]")

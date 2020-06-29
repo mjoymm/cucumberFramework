@@ -23,6 +23,7 @@ import cucumber.api.junit.Cucumber;
 		},
 //		tags = {"@flightSearch, @flightBooking, @signup, @reservation"}
 		tags = {"@pw"}
+//		tags = {"@signup"}
 		)
 
 public class TestRunner {

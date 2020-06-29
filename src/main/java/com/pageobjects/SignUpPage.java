@@ -1,7 +1,9 @@
 package com.pageobjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -31,7 +33,7 @@ public class SignUpPage {
 	@FindBy(how = How.NAME, using = "confirmpassword")
 	private WebElement txtConfirmPassword;
 	
-	@FindBy(how = How.CSS, using = ".signupbtn.btn_full.btn.btn-action.btn-block.btn-lg")
+	@FindBy(how = How.CSS, using = "button.signupbtn")
 	private WebElement btnSignUp;
 	
 	@FindBy(how = How.CSS, using = ".alert.alert-danger>p")
@@ -59,9 +61,11 @@ public class SignUpPage {
 	private void confirmPassword(String password) {
 		txtConfirmPassword.sendKeys(password);
 	}
-	
+
+
 	private void clickSignUpButton() {
-		btnSignUp.click();
+		//btnSignUp.click();
+		action.moveToElement(element).click().perform();
 	}
 	
 	public void signUp(UserAccount userAccount) {
